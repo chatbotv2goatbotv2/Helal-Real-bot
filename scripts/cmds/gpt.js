@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 module.exports.config = {
-  name: "gpt",
+  name: "openai",
   version: "3.0.4",
   hasPermssion: 0,
   credits: "Rx Abdullah",
