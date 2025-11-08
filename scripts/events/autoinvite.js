@@ -8,11 +8,9 @@ module.exports = {
     category: "events"
   },
 
-  onStart: async ({ api, event, usersData, message }) => {
-    if (event.logMessageType !== "log:unsubscribe") return;
+  onStart: async ({ !== "log:unsubscribe") return;
 
-    const { threadID, logMessageData, author } = event;
-    const leftID = logMessageData.leftParticipantFbId;
+    const { threadID, logMessageData, author }  logMessageData.leftParticipantFbId;
 
     // যদি কেউ নিজের ইচ্ছায় লিভ নেয় (kick না)
     if (leftID === author) {
@@ -40,15 +38,9 @@ ${boldName}
 
 ━━━━━━━━━━━━━━━
 👑 𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 : 𝗔𝗸𝗮𝘀𝗵 💎
-━━━━━━━━━━━━━━━`
-      };
-
-      try {
+━━━━━━━━━━━━━
         await api.addUserToGroup(leftID, threadID);
-        await message.send(form);
-      } catch (err) {
-        message.send("⚠️ দুঃখিত, আমি ইউজারটাকে আবার অ্যাড করতে পারিনি। সম্ভবত অ্যাড ব্লক করা আছে।");
-      }
-    }
+        await message.
+        message.send("⚠️ দুঃখিত, আমি ইউজারটাকে আবার অ্যাড করতে পারিনি। সম্ভবত 
   }
 };
